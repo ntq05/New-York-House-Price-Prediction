@@ -453,7 +453,7 @@ Brokered by Brown Harris Stevens,Co-op for sale,4,4,2184.207862,New York,40.7625
 other,Co-op for sale,2,1,2184.207862,New York,40.7316025,-74.0100989,1049000,Pending,Manhattan,2.0
 Brokered by Sotheby's International Realty - Downtown Manhattan,Co-op for sale,3,2,1600.0,New York,40.7917785,-73.9406204,998000,Pending,Manhattan,1.5
 Brokered by RE MAX Real Estate Professionals,House for sale,3,2,1900.0,United States,40.6228038,-74.0109676,999000,Pending,Brooklyn,1.5
-other,Condo for sale,2,2,2184.207862,New York County,40.7850141,-73.9481639,1065000,Pending,Manhattan,1.0
+other,Condop for sale,2,2,2184.207862,New York County,40.7850141,-73.9481639,1065000,Pending,Manhattan,1.0
 other,Co-op for sale,3,1,246.0,New York,40.7718652,-73.9599302,250000,Pending,Manhattan,3.0
 Brokered by Keller Williams NYC,Townhouse for sale,6,4,2400.0,United States,40.7140718,-73.958911,3700000,Pending,Brooklyn,1.5
 Brokered by Corcoran East Side,Co-op for sale,1,2,2184.207862,New York,40.7687538,-73.9631311,695000,Pending,Manhattan,0.5
@@ -1639,7 +1639,7 @@ other,House for sale,3,2,1538.0,11214,40.6013215,-73.986412,1288000,Pending,Broo
 other,House for sale,3,4,2400.0,United States,40.6175,-74.103996,998800,Pending,Staten Island,0.75
 other,Co-op for sale,1,1,2184.207862,New York,40.6660965,-73.8478793,225000,Pending,Queens,1.0
 Brokered by RE MAX Real Estate Professionals,Co-op for sale,3,1,900.0,New York,40.617177,-73.986447,398000,Pending,Brooklyn,3.0
-other,Condo for sale,3,1,2184.207862,New York,40.7240197,-73.9912901,1125000,Pending,Manhattan,3.0
+other,Condop for sale,3,1,2184.207862,New York,40.7240197,-73.9912901,1125000,Pending,Manhattan,3.0
 other,House for sale,3,2,2050.0,United States,40.6090065,-73.9307581,799000,Pending,Brooklyn,1.5
 other,House for sale,3,2,1870.0,United States,40.8325495,-73.8167031,1050000,Pending,Bronx,1.5
 other,Condo for sale,2,3,1397.0,New York,40.7681878,-73.9845086,1475000,Pending,Manhattan,0.6666666666666666
@@ -3570,7 +3570,7 @@ other,House for sale,3,3,2184.207862,United States,40.724706,-73.7957477,1350000
 other,Co-op for sale,3,2,2184.207862,United States,40.5938747,-73.9742907,2500000,Pending,Brooklyn,1.5
 other,Multi-family home for sale,4,2,2184.207862,10466,40.8871714,-73.8506752,689000,Pending,Bronx,2.0
 other,House for sale,4,3,2364.0,United States,40.7773521,-73.7464296,1688888,Pending,Queens,1.3333333333333333
-other,Condo for sale,1,1,2184.207862,New York,40.751918,-73.9698335,1080000,Pending,Manhattan,1.0
+other,Condop for sale,1,1,2184.207862,New York,40.751918,-73.9698335,1080000,Pending,Manhattan,1.0
 other,Multi-family home for sale,4,3,1176.0,10303,40.638069,-74.1627747,599000,Pending,Staten Island,1.3333333333333333
 other,Co-op for sale,2,2,1804.0,New York,40.7241512,-73.9992064,3125000,Pending,Manhattan,1.0
 other,Condo for sale,3,2,2184.207862,United States,40.761661,-73.9653315,649000,Pending,Manhattan,1.5

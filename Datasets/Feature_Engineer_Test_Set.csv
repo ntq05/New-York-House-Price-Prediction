@@ -590,7 +590,7 @@ other,Condo for sale,2,2,879.0,New York,40.6341182,-74.0202284,679000,Pending,Br
 other,Co-op for sale,2,1,2184.207862,New York,40.649346,-74.0086998,385000,Pending,Brooklyn,2.0
 other,Co-op for sale,2,1,850.0,United States,40.617623,-74.038637,429000,Pending,Brooklyn,2.0
 Brokered by Exp Realty,Condo for sale,3,2,1180.0,New York,40.8874214,-73.9034179,639999,Pending,Bronx,1.5
-other,Condo for sale,3,1,2184.207862,New York,40.7240197,-73.9912901,1125000,Pending,Manhattan,3.0
+other,Condop for sale,3,1,2184.207862,New York,40.7240197,-73.9912901,1125000,Pending,Manhattan,3.0
 other,Co-op for sale,2,2,1111.0,New York,40.7696861,-73.9557104,895000,Pending,Manhattan,1.0
 other,Co-op for sale,1,1,779.0,New York,40.5834583,-73.9522667,385000,Pending,Brooklyn,1.0
 other,House for sale,4,4,3300.0,United States,40.5675492,-74.140764,1250000,Pending,Staten Island,1.0
@@ -956,7 +956,7 @@ other,Co-op for sale,1,1,2184.207862,New York,40.7109831,-73.7970163,189000,Pend
 Brokered by COMPASS,Co-op for sale,2,2,1358.0,New York,40.6248278,-73.909396,499000,Pending,Brooklyn,1.0
 other,Multi-family home for sale,3,3,1472.0,United States,40.6206794,-73.9855221,1650000,Pending,Brooklyn,1.0
 other,House for sale,3,2,825.0,United States,40.6222734,-73.924094,800000,Pending,Brooklyn,1.5
-Brokered by Keller Williams NYC,Condo for sale,1,1,2184.207862,New York,40.7520734,-73.9690003,598000,Pending,Manhattan,1.0
+Brokered by Keller Williams NYC,Condop for sale,1,1,2184.207862,New York,40.7520734,-73.9690003,598000,Pending,Manhattan,1.0
 other,Condo for sale,3,2,1185.0,New York,40.6172572,-73.9611011,725000,Pending,Brooklyn,1.5
 other,Land for sale,3,2,2184.207862,United States,40.7827104,-73.8457691,790000,Pending,Queens,1.5
 other,Co-op for sale,2,1,2184.207862,United States,40.7408626,-73.7553116,279000,Pending,Queens,2.0

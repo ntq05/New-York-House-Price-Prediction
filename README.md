@@ -214,6 +214,8 @@ To provide an interactive interface for predicting house prices in New York, a *
 
 This implementation provides a clean and interactive interface for end-users to experiment with different property configurations and receive real-time price estimations.
 
+---
+
 ## 🚀 How to Run the Project
 
 ### Step 1: Set Up the Environment

@@ -12,7 +12,7 @@ A data science project that predicts house prices in New York using features suc
 - [Streamlit App Implementation](#streamlit-app-implementation)
 - [How to Run](#how-to-run)
 - [Lessons Learned](#lessons-learned)
-- [Demo](#demo)
+- [Reflections and Limitations](#reflections-and-limitations)
 - [License](#license)
 
 ## 🛠️ Technologies Used
@@ -36,7 +36,7 @@ This project involves:
 - Training and evaluating several regression models, including Linear Regression, KNN Regression, Random Forest, and LightGBM.
 - Deploying the final model as a user-friendly web application using Streamlit, allowing users to input house features and get instant price predictions.
 
-The goal is to demonstrate practical skills in data analysis, feature engineering, model selection, and deployment.
+The goal of this project is to apply the knowledge and techniques acquired from Data Mining, Statistical Methods, and Statistical Learning courses to a real-world problem, bridging theory and practical implementation.
 
 ## 📂 Dataset Overview
 
@@ -136,4 +136,132 @@ The results of the statistical tests helped assess whether observed differences 
 
 - **One-hot encoding** was applied to all categorical features  
 - **RobustScaler** was used for normalization. This method is robust to outliers, as it scales features using the median and interquartile range (IQR), making it more suitable for this dataset than standard scaling
+
+---
+
+## 🤖 Model Training and Selection
+
+### Models Used:
+- **Linear Regression**
+- **K-Nearest Neighbors (KNN) Regression**
+- **Random Forest Regression**
+- **LightGBM (LGBM) Regression**
+
+### Model Selection Strategy
+
+#### 1. Linear Regression & KNN Regression
+- Applied **cross-validation** to evaluate model performance.
+- Evaluation metrics: **R²**, **MAE**, **MSE**, **RMSE**.
+- **Linear Regression** was not suitable due to the lack of linearity in the dataset.
+- For **KNN Regression**, used **Grid Search Cross-Validation** to find the optimal hyperparameters based on R², MAE, and MSE.
+- The selected KNN models were then evaluated on the test set using the same metrics.
+
+#### 2. Random Forest & LightGBM
+- Due to high computational cost, **Randomized Search Cross-Validation** was used instead of Grid Search.
+- Metrics used for model selection: **R²**, **MAE**, **MSE**.
+- Built 3 candidate models for each algorithm based on randomized search results.
+- Evaluated each model on the test set using **R²**, **MAE**, **MSE**, and **RMSE**, and selected the best-performing one.
+
+#### 3. Feature Importance
+- Used **feature importance** analysis from Random Forest and LGBM models.
+- Helped identify which features had the most impact on the predictions.
+
+---
+
+### Final Model Selection
+- **Best Model:** LightGBM (Model 2 - optimized for MAE)
+- **Selection Method:** Randomized Search CV (based on MAE)
+- **Performance on Test Set:**
+
+| Model               | R²       | MAE           | MSE             | RMSE           |
+|--------------------|----------|---------------|------------------|----------------|
+| LGBM Model 2 (MAE) | 0.580829 | 711,646.09    | 1.056096 × 10¹³  | 3.249762 × 10⁶ |
+
+---
+
+## 🌐 Streamlit App Implementation
+
+To provide an interactive interface for predicting house prices in New York, a **Streamlit web application** was developed. The app allows users to input property details and instantly receive a predicted price using the trained **LightGBM model**.
+
+### Key Components:
+
+- **Model Loading**:
+  - Loaded the pre-trained LGBM model (`lgbm.pkl`) along with its preprocessing components:
+    - One-hot encoder (`onehot_encoder.pkl`)
+    - Scaler (`scaler.pkl`)
+    - Column structure (`columns.pkl`)
+
+- **Preprocessing Function**:
+  - Added a new feature `bed_bath_ratio` to enhance model performance.
+  - Applied log transformation to features: `beds`, `bath`, `propertysqft`, and the derived `bed_bath_ratio`.
+  
+- **Prediction Function**:
+  - Performed preprocessing on user input.
+  - Used the model to make predictions in log scale, and converted the result back to the original price scale using `np.expm1`.
+
+### App Features:
+
+- User-friendly input form for:
+  - Number of beds
+  - Number of bathrooms
+  - Property square footage
+  - Latitude
+  - Longitude
+
+- On clicking the **"Predict"** button:
+  - User input is transformed into a DataFrame.
+  - Prediction is made and displayed in dollar format with two decimal places.
+
+This implementation provides a clean and interactive interface for end-users to experiment with different property configurations and receive real-time price estimations.
+
+## 🚀 How to Run the Project
+
+### Step 1: Set Up the Environment
+
+1. Install [Anaconda](https://www.anaconda.com/products/distribution) if you haven't already.
+2. Open your terminal or command prompt and navigate to the directory that contains the `environment.yml` file.
+3. Create the conda environment by running: conda env create -f environment.yml
+4. After the environment is created, activate it: conda activate NYHousePrediction
+
+### Step 2: Run the Jupyter Notebook
+
+Once the environment is activated, you can launch Jupyter Notebook.
+Open the notebook file in your browser and execute the cells to explore data and model training.
+
+### Step 3: Run the Streamlit App
+1. Navigate to the App directory: cd App
+2. Launch the Streamlit application: streamlit run app.py
+3. The app will open in your browser. If not, go to the URL shown in your terminal
+
+--- 
+
+## 📚 Lessons Learned
+
+- Applied **statistical methods** for exploratory data analysis (EDA) and data preprocessing to better understand and prepare the dataset.
+- Implemented various **machine learning models** learned from coursework in **statistical learning** and **machine learning** classes.
+- Gained hands-on experience with new techniques and tools:
+  - **Lorenz Curve**: Used to identify the optimal thresholds for re-categorizing data.
+  - **Matplotlib & Seaborn**: Learned how to visualize data effectively and interpret various types of plots.
+
+These lessons helped deepen both my theoretical understanding and practical skills in data science and model development.
+
+---
+
+## 🔄 Reflections and Limitations
+
+While this project provided a valuable opportunity to apply knowledge from Data Mining, Statistical Methods, and Statistical Learning, there were several limitations:
+
+- The dataset had notable inconsistencies and lacked important features that could have improved prediction performance.
+- As this was my first end-to-end machine learning project, there were areas where optimization techniques and advanced preprocessing could have been better utilized.
+- Model performance, although functional, did not reach ideal levels — this highlights the importance of domain understanding and data quality.
+
+Nonetheless, the process greatly enhanced my practical understanding of the ML pipeline and revealed areas for continued improvement in future projects.
+
+
+## 📄 License
+
+This project is created for educational and portfolio purposes only.  
+All rights are reserved by the author. Unauthorized use, reproduction, or distribution of any part of this project is prohibited without explicit permission.
+
+© 2025 Thiện Quân Nguyễn
 
